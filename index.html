@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="icon" href="images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="styles/index.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,14 +11,38 @@
     </head>
     <body>
         <h1>Welcome!</h1>
-        <p>
-            Summer Sheldon's presentation of random js games she made/recreated
-        </p>
+        <p>Summer Sheldon's page where she presents herself and her projects</p>
+        <div class="contacts row">
+            <a href="mailto:summeresheldon@gmail.com">summeresheldon@gmail.com</p>
+            <a href="https://www.linkedin.com/in/summer-sheldon/">linkedin</a>
+        </div>
+        <h2>Bio</h2>
+        <p>Hello! I like fishing and programming and getting sweet treats</p>
+        <!-- <div class="bio-images-grid">
+            <img class="bio-img" src="images/bass.jpg" />
+            <img class="bio-img" src="images/hedgehog.jpg" />
+            <img class="bio-img" src="images/turtle.jpg" />
+            <img class="bio-img" src="images/crappie.jpg" />
+        </div> -->
+
+
+        <div class="imgs row">
+                <img class="bio-img" src="images/bass.jpg" />
+                <img class="bio-img" src="images/hedgehog.jpg" />
+                <img class="bio-img" src="images/turtle.jpg" />
+                <img class="bio-img" src="images/crappie.jpg" />
+        </div>
         <h2>Games</h2>
-        <nav>
-            <a href="/connect-four">Connect Four</a>
-            <a href="/speed-wordle">Speed Wordle</a>
-            <a href="/snake">Snake (WIP)</a>
-        </nav>
+        <p>
+            Here are a few mini projects that I have done, mostly to teach
+            myself different front end things like React or Js, so they are not
+            perfect. Also they are just recreations of existing games so i do
+            not take any credit for the ideas of course
+        </p>
+        <ul class="game-links">
+            <li><a href="/connect-four">Connect Four</a></li>
+            <li><a href="/speed-wordle">Speed Wordle (WIP)</a></li>
+            <li><a href="/snake">Snake</a></li>
+        </ul>
     </body>
 </html>

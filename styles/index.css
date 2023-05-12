@@ -1,0 +1,47 @@
+:root {
+    font-family: "Courier New", Courier, monospace;
+    --color-secondary: purple;
+}
+
+body {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+body * {
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.imgs {
+    align-content: space-between;
+}
+
+.bio-img {
+    width: 40%;
+    max-width: 250px;
+    margin: 10px;
+}
+
+.contacts a {
+    padding: 10px;
+    color: var(--color-secondary);
+}
