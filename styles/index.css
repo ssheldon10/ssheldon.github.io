@@ -1,18 +1,16 @@
 :root {
     font-family: "Courier New", Courier, monospace;
+    --color-primary: black;
     --color-secondary: purple;
+    --color-emphasis: rgb(88, 1, 88);
 }
 
 body {
     margin: 20px;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     text-align: center;
-}
-
-body * {
-    justify-content: center;
 }
 
 ul {
@@ -20,28 +18,49 @@ ul {
 }
 
 a {
-    color: black;
+    /* font-weight: bold; */
+    color: var(--color-secondary);
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-emphasis);
+    text-decoration: underline;
 }
 
 .row {
     display: flex;
-    /* width: 100%; */
     flex-wrap: wrap;
     margin: 0;
 }
 
 .imgs {
     align-content: space-between;
+    justify-content: center;
 }
+
+/* .imgs > .row {
+    width: fit-content;
+} */
 
 .bio-img {
     width: 40%;
-    max-width: 250px;
+    max-width: 200px;
     margin: 10px;
 }
 
 .contacts a {
     padding: 10px;
-    color: var(--color-secondary);
+}
+
+.caption {
+    font-style: italic;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.text-box {
+    align-self: center;
 }
